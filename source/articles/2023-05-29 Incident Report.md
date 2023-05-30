@@ -10,7 +10,7 @@
 
 ## Spear Phishing
 The attacker reached out to all of our team members individually at different times making a reasonable sounding request for moderation services in their Discord server.
-The attacker claimed to be from Rarrible and had a vanity Discord invite for a Rarible Discord server with a significant number of members.
+The attacker claimed to be from Rarible and had a vanity Discord invite for a Rarible Discord server with a significant number of members.
 The attacker's Discord server required verification (as is common across crypto Discord servers) which used a Discord integration to send the user to the attacker's website.
 <details>
 	<summary>Third Party Connection Request Image</summary>
