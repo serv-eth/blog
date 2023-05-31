@@ -1,6 +1,6 @@
 # 2023-05-29 Incident Report
 ## Summary
-* One of our team member's Discord account was compromised via a spear phishing attack.
+* One of our team members suffered a Discord account compromise via a spear phishing attack.
 * 2FA was enabled, but the attack vector was able to bypass it.
 * The attacker spammed scam messages on several of our clients' Discord servers.
 * The attacker modified roles and permissions in at least one client's Discord server.
@@ -9,8 +9,8 @@
 * We were able to identify how the attacker gained access and revoke it.
 
 ## Spear Phishing
-The attacker reached out to all of our team members individually at different times making a reasonable sounding request for moderation services in their Discord server.
-The attacker claimed to be from Rarible and had a vanity Discord invite for a Rarible Discord server with a significant number of members.
+The attacker reached out to several of our team members individually at different times making a reasonable sounding request for moderation services in their Discord server.
+The attacker claimed to be from Rarible and had a vanity Discord invite for a Rarible Discord server with a significant number of server members.
 The attacker's Discord server required verification (as is common across crypto Discord servers) which used a Discord integration to send the user to the attacker's website.
 <details>
 	<summary>Third Party Connection Request Image</summary>
@@ -66,7 +66,7 @@ There was one client's Discord server where the attacker removed some roles from
 After reviewing the audit log, we then reviewed our team's permissions in servers where we have access to do so and removed "Manage Roles" permission from all except our founder where appropriate so any future compromise has limited damage.
 
 ## Future Protection
-While our team is quite familiar with various scams and attacks in the crypto space since we deal with it daily, this one was novel in that it was targeted specifically at moderators and it utilized a bookmarklet as a novel delivery mechanism.
+While our team is quite familiar with various scams and attacks in the crypto space since we deal with it daily, this one was novel in that it utilized a bookmarklet as a novel delivery mechanism.
 Our internal policy already requires 2FA for all of our members to help limit the chances of this sort of thing occurring, but unfortunately this attack vector is able to bypass 2FA requirements.
 The primary thing we will be doing internally to limit the chance of this happening again is additional training both on the specifics of this attack (bookmarklets) as well as general best practices of not doing anything that is out of the ordinary.
 
